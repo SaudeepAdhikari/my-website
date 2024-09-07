@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudeep Adhikari- Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "4rIpJ1RKaBOGuKVRQ",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- <a href="#">ami.ke</a> -->
+            </div>
+                <nav class="navbar">
+                    <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li> 
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero-container">
+            <div class="hero-text">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/saudeep.adhikariking" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/SaudeepAdh51364" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/saudeepadh/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="intro">
+                    <h1>I am Saudeep Adhikari</h1>
+                    <p>I'm Saudeep, a professional web developer with a long time experience in this field</p>
+                    <a href="#" class="btn">My Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="IMG-7dfc75f6d6b1548e7027d02ba105eca4-V.jpg" alt="Saudeep Adhikari">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="20230318_080230~2.jpg" alt="Saudeep Adhikari">
+            </div>
+            <div class="about-content">
+                <h2>About</h2>
+                <h3>App Developer</h3>
+                <p>My personal details are as follows.</p>
+                <div class="personal-details">
+                    <div class="detail-item">
+                        <span>Birthday:</span> 11 March 2004
+                    </div>
+                    <div class="detail-item">
+                        <span>Website:</span> www.saudeepadhikari.com.np
+                    </div>
+                    <div class="detail-item">
+                        <span>Location:</span> Maijogmai,3, Namsaling,Ilam
+                    </div>
+                    <div class="detail-item">
+                        <span>Email:</span> saudeepadhikari@gmail.com
+                    </div>
+                    <div class="detail-item">
+                        <span>Freelance:</span> Available
+                    </div>
+                </div>
+                <p id="short-bio">
+                    I possess a strong proficiency in crafting, developing, and tailoring mobile applications utilizing cutting-edge tools and technologies, complemented by an extensive experience spanning over 4 years. 
+                </p>
+                <p id="more-bio" style="display: none;">
+                    I thrive on embracing fresh challenges and seizing new prospects, always poised to breathe life into your concepts and aspirations. My fervor lies in aiding you to realize your projects with unparalleled dedication. I hold a deep understanding of the significance of both time and reputation, committing to your endeavors only when I'm confident in delivering a flawless alignment with your requisites. The prospect of collaborating with you is something I eagerly anticipate!
+                </p>
+                <button id="read-more-btn" class="btn">Read bio</button>
+            </div>
+        </div>
+    </section>
+    <div id="skills" class="section">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">React</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 5%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">PHP</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">My SQL</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form action="#" method="post" onsubmit="sendMail(event)">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="contact-info">
+                <p><strong>Email:</strong> saudeepadhikari@gmail.com</p>
+                <p><strong>Phone:</strong> +977 9842064469</p>
+                <p><strong>Address:</strong> Kathmandu 32, Pepsicola</p>
+            </div>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d220.80178164134827!2d85.36233139239233!3d27.69169481499697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1725439929261!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+    </div>
+   
+
+    
+
+    <footer>
+        <p>© 2024 Saudeep Adhikari. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
