@@ -484,4 +484,6 @@ html {
     .nav-links a:last-child {
         border-bottom: none;
     }
+     .intro h1 {
+        font-size: 1.5rem;}
 }
